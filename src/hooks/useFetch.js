@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
 
 
-export default function useFetch(url, auth_token) {
-
+export default function useFetch(endpoint, auth_token) {
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
-
+    const url = "http://127.0.0.1:8000" + endpoint
     useEffect(() => {
         const abortCont = new AbortController();
         fetch(url, {
@@ -13,7 +12,7 @@ export default function useFetch(url, auth_token) {
         method: 'GET',
         headers: {
             'Authorization': auth_token,
-        }
+        },
         })  
         .then(function(res) {
             if (!res.ok) {
