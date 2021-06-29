@@ -1,10 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Home/Navbar.jsx'
+import Greetings from '../components/Home/Greetings'
+import PostBlog from '../components/Home/PostBlog'
 
 export default function Home() {
     return (
         <div>
-            <Navbar/>
+            <Greetings></Greetings>
+            <PostBlog></PostBlog>
         </div>
     )
 }
