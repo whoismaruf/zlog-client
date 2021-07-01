@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function PostBlog() {
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
-    const auth_token = "Token d9a50da3558d4a1214312ceec97fb189a1f78b5a"
+    const auth_token = process.env.REACT_APP_AUTH_TOKEN
     const [check, setCheck] = useState(false)
 
     const handleSubmit = function (e) {
