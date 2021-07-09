@@ -27,7 +27,7 @@ function PostBlog() {
 
     return (
         <div className={"-mt-24"}>
-            <div className={"container px-5 py-24 relative"}>
+            <div className={"px-5 py-24"}>
                 <div className={"lg:w-1/2 md:w-2/3 2xl:1/3 2xl:ml-96 bg-white rounded-lg p-8 flex lg:absolute lg:left-32 flex-col md:ml-32 w-full 2xl:-left-5 3xl:left-32 mt-10 md:mt-0 z-10 "}>
                     {/* <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Create Post</h2>
                     <p className="leading-relaxed mb-5 text-gray-600">Post your thoughts to Zlog community</p> */}
